@@ -1,0 +1,257 @@
+/* --- GLOBAL STYLES & RESET --- */
+:root {
+    --primary-color: #007bff; /* Professional Blue (Can be changed to your logo blue) */
+    --accent-color: #dc3545; /* Red accent (Can be changed to your logo red) */
+    --text-dark: #333;
+    --text-light: #555;
+    --bg-light: #f7f9fc;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* --- 1. HEADER AND NAVIGATION --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #eee;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.site-logo {
+    height: 45px; /* This is the style that controls the sizes */
+    width: auto;
+}
+
+.main-nav a {
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-left: 30px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* --- 2. LAYOUT AND CONTAINERS --- */
+.content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.separator {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 40px 0;
+}
+
+/* --- 3. HERO SECTION (Main Intro) --- */
+.hero-content {
+    text-align: left;
+    padding-top: 30px;
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Large, impactful heading */
+    font-weight: 800; /* Extra bold */
+    margin-bottom: 15px;
+    line-height: 1.1;
+    color: var(--primary-color);
+}
+```css
+/* --- 5. ABOUT US SECTION STYLES --- */
+.about-us-section {
+    padding: 30px 0;
+    margin-top: 30px;
+    background-color: var(--white); /* White background to make it stand out */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-us-section h2 {
+    font-size: 2.5rem;
+    color: var(--accent-color); /* Using the red accent color for the title */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.about-us-section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.company-details {
+    padding: 15px;
+    border-left: 5px solid var(--primary-color); /* Blue accent line */
+    background-color: var(--bg-light);
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.company-details p {
+    margin: 5px 0;
+}
+
+.card-list h3 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+}
+
+.supplier-note {
+    font-style: italic;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.tagline {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    color: var(--text-light);
+    max-width: 700px;
+}
+
+/* --- 4. CTA BUTTON STYLING --- */
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color); /* Use the red accent for the main button */
+    color: var(--white);
+    padding: 14px 40px;
+    border-radius: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #bd2130; /* Darker red on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(220, 53, 69, 0.4);
+}
+
+/* --- 5. SERVICES SECTION --- */
+.services-list h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 15px;
+}
+
+.service-group {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+.service-group h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.service-group p {
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.assets-list {
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.sub-link {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* --- 6. FOOTER --- */
+.main-footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    background-color: var(--white);
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+```css
+/* --- 7. CONTACT SECTION STYLES --- */
+.contact-section {
+    padding: 40px 0;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.contact-details a {
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.whatsapp-heading {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+}
+
+/* WhatsApp Button Styling */
+.whatsapp-button {
+    display: inline-flex; /* Use flex to align icon/text if you add one later */
+    align-items: center;
+    text-decoration: none;
+    background-color: #25D366; /* Official WhatsApp Green */
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 50px; /* Highly rounded, pill-shape */
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-button:hover {
+    background-color: #1DA851; /* Darker green on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(37, 211, 102, 0.5);
+}
